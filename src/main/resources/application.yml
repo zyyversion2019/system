@@ -1,0 +1,21 @@
+#资源文件切换
+server:
+
+  port: 8090
+  servlet:
+    context-path: /system
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#指定mapper.xml的位置
+mybatis:
+  mapper-locations: classpath:mapper/**.xml
+system:
+  url: http://localhost:8080/system
+
