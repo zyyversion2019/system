@@ -14,7 +14,7 @@ import java.net.CookieStore;
 import java.util.List;
 
 @RestController
-public class LoginController {
+public class LoginControlleropy {
 
     @Autowired
     private UserMapper userMapper;
