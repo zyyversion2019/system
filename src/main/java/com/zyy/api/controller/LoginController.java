@@ -37,6 +37,12 @@ public class LoginController {
                 return true;
             }
         }
+        System.out.println("ok");
         return false;
+    }
+
+    @RequestMapping("login")
+    public void newMethod(HttpServletResponse response,@RequestBody User user){
+        login(response,user);
     }
 }
